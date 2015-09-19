@@ -1,0 +1,4 @@
+.vagrant
+*.swp
+*.sublime-project
+*.sublime-workspace

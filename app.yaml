@@ -1,0 +1,14 @@
+application: todo 
+version: live
+runtime: go
+api_version: go1
+
+handlers:
+- url: /favicon.ico
+  static_files: static/img/favicon.ico
+  upload: static/img/favicon.ico
+  expiration: "10d"
+
+- url: /.*
+  script: _go_app
+  login: admin
